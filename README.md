@@ -1,5 +1,5 @@
 
-    # ReadMe Porject
+    # ReadMe Generator
 
     # Table of Contents
     
@@ -7,7 +7,7 @@
     - [License](#license)
 
     ## Description:
-        Readme Generator
+        It generates readme's.....
 
     ## License:
         
