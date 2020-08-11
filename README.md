@@ -7,7 +7,7 @@
     - [License](#license)
 
     ## Description:
-        It generates readme's.....
+        Stuff
 
     ## License:
         
