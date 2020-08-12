@@ -15,39 +15,71 @@ function promptUser() {
             type: "input",
             message: "What is the name of your project?",
             name: "title"
-    }, {
-        type: "input",
-        message: "Please enter a description of your project.",
-        name: "description"
-    }, {
-       type: "checkbox",
-       message: "Please select a license.",
-       choices: [
-           "Apache",
-           "MIT",
-           "ISC",
-           "None"
+        }, {
+            type: "input",
+            message: "Please enter a description of your project.",
+            name: "description"
+        }, {
+            type: "checkbox",
+            message: "Please select a license.",
+            choices: [
+                "Apache",
+                "MIT",
+                "ISC",
+                "None"
        ],
-       name:"license" 
-    }
+            name:"license" 
+        }, {
+            type: "input",
+            message: "What are the steps needed to install the following project?.",
+            name: "installation"
+        },  {
+            type: "input",
+            message: "How will your project be used?",
+            name: "usage"
+        },  {
+            type: "input",
+            message: "Did you collaberate with anyone? If so provide github links for yours and any contributors.",
+            name: "contributing"
+        },  {
+            type: "input",
+            message: "Provide and examples of your project and let us know how to run them.",
+            name: "test"
+        }
 ])
 };
 
 // Writes to the .md
 function generateMarkdownLang(response) {
     return `
-    # ${response.title}
+# ${response.title}
 
-    # Table of Contents
+## Table of Contents
     
-    - [Description](#description)
-    - [License](#license)
+* [Description](#description)
+* [License](#license)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Testing](#test)
 
-    ## Description:
-        ${response.description}
+## <a name="description">Description:</a>
+    ${response.description}
 
-    ## License:
-        ${response.license}
+## <a name="license">License:</a>
+    ${response.license}
+
+## <a name="installation">Installation:</a>
+    ${response.installation}
+
+## <a name="usage">Usage:</a>
+    ${response.usage}
+
+## <a name="contributing">Contributing:</a>
+    ${response.contributing}
+
+## <a name="test">Testing:</a>
+    ${response.test}
     `
 };
 
