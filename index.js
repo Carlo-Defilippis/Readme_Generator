@@ -45,6 +45,10 @@ function promptUser() {
             type: "input",
             message: "Provide and examples of your project and let us know how to run them.",
             name: "test"
+        },  {
+            type: "input",
+            message: "Please provide your github link.",
+            name: "github"
         }
 ])
 };
@@ -62,24 +66,28 @@ function generateMarkdownLang(response) {
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Testing](#test)
+* [Github](#github)
 
 ## <a name="description">Description:</a>
-    ${response.description}
+*    ${response.description}
 
 ## <a name="license">License:</a>
-    ${response.license}
+*    ${response.license}
 
 ## <a name="installation">Installation:</a>
-    ${response.installation}
+*    ${response.installation}
 
 ## <a name="usage">Usage:</a>
-    ${response.usage}
+*    ${response.usage}
 
 ## <a name="contributing">Contributing:</a>
-    ${response.contributing}
+*    ${response.contributing}
 
 ## <a name="test">Testing:</a>
-    ${response.test}
+*    ${response.test}
+
+## <a name="github">Github URL:</a>
+*    [${response.github}](${response.github})
     `
 };
 

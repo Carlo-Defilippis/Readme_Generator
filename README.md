@@ -1,5 +1,5 @@
 
-# Fadsaa
+# ReadME Generator
 
 ## Table of Contents
     
@@ -9,22 +9,26 @@
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Testing](#test)
+* [Github](#github)
 
 ## <a name="description">Description:</a>
-    dswa
+*    Generates dynamic readme's according to the user prompts
 
 ## <a name="license">License:</a>
-    Apache,MIT,ISC,None
+*    
 
 ## <a name="installation">Installation:</a>
-    
+*    Run npm install then run the index.js
 
 ## <a name="usage">Usage:</a>
-    dwa
+*    To generate dynamic readme's for projects
 
 ## <a name="contributing">Contributing:</a>
-    dwa
+*    class study group
 
 ## <a name="test">Testing:</a>
-    dswa
+*    Run the index.js to generate readme's
+
+## <a name="github">Github URL:</a>
+*    [https://github.com/Carlo-Defilippis/Readme_Generator](https://github.com/Carlo-Defilippis/Readme_Generator)
     
