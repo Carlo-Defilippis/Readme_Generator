@@ -98,7 +98,7 @@ async function init() {
 
         const readMe = generateMarkdownLang(responce);
 
-        await writeFileAsync("README2.md", readMe);
+        await writeFileAsync("README3.md", readMe);
         console.log("Readme file created!");
     } catch (err) {
         console.log(err)
